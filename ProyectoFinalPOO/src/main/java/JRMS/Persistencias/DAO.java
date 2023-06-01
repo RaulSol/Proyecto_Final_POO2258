@@ -1,0 +1,15 @@
+package JRMS.Persistencias;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+public interface DAO {
+    public abstract boolean insertar(Object obj) throws SQLException;
+    public abstract boolean update(Object obj) throws SQLException;
+    public abstract boolean delete(String id) throws SQLException;
+
+    public abstract ArrayList btenerTodo() throws SQLException;
+    public abstract Object buscarPorid(String id) throws SQLException;
+
+
+}
